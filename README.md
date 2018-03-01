@@ -102,7 +102,7 @@ Input   Expected        Guess
 ```
 
 ## Contributing
-Everybody can send pull requests for any kind of improvements.
+Anyone can send pull requests for any kind of improvements.
 
 ## License
 See GNU Public License v3.
