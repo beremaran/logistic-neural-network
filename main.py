@@ -1,9 +1,10 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 from __future__ import print_function
 
 import os
 import sys
+import argparse
 
 import numpy as np
 
@@ -27,6 +28,11 @@ def dump_evaluations(x, y, yy):
 
 
 if __name__ == "__main__":
+    argparser = argparse.ArgumentParser()
+    argparser.add_argument('action')
+
+    args = argparser.parse_args()
+
     nn = FCNN()
     models = [
         {
@@ -51,7 +57,7 @@ if __name__ == "__main__":
         }
     ]
 
-    if sys.argv[1] == "evaluate":
+    if args.action == "evaluate":
         for model in models:
             print()
             print('-' * 16)
@@ -60,7 +66,7 @@ if __name__ == "__main__":
             nn.load_model(os.path.join(MODEL_DIR, model["name"]))
             output = nn.evaluate(model["data"]["x"])
             dump_evaluations(model["data"]["x"], model["data"]["y"], output)
-    elif sys.argv[1] == "train":
+    elif args.action == "train":
         for model in models:
             print()
             print("Training '{}' model ...".format(model["name"]))
