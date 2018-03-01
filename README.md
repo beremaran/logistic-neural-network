@@ -111,3 +111,5 @@ See GNU Public License v3.
 
  * 30/11/2017
     * Initial release.
+ * 01/03/2018
+    * Some polishing made for project share on GitHub.
