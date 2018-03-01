@@ -64,13 +64,13 @@ I prepared 5 models for basic logical operators.
 
 #### NOT
 ```
-Input   Expected        Guessed
+Input   Expected        Guess
 [0]     1               1.0 (0.9995)
 [1]     0               0.0 (0.0003)
 ```
 #### XOR
 ```
-Input   Expected        Guessed
+Input   Expected        Guess
 [0 0]   0               0.0 (0.4995)
 [0 1]   1               1.0 (0.5005)
 [1 0]   1               1.0 (0.5005)
@@ -78,7 +78,7 @@ Input   Expected        Guessed
 ```
 #### AND
 ```
-Input   Expected        Guessed
+Input   Expected        Guess
 [0 0]   0               0.0 (0.0000)
 [0 1]   0               0.0 (0.0015)
 [1 0]   0               0.0 (0.0015)
@@ -86,7 +86,7 @@ Input   Expected        Guessed
 ```
 #### OR
 ```
-Input   Expected        Guessed
+Input   Expected        Guess
 [0 0]   0               0.0 (0.0009)
 [0 1]   1               1.0 (0.9997)
 [1 0]   1               1.0 (0.9997)
@@ -94,7 +94,7 @@ Input   Expected        Guessed
 ```
 #### IMPLIES
 ```
-Input   Expected        Guessed
+Input   Expected        Guess
 [0 0]   1               1.0 (0.9994)
 [0 1]   1               1.0 (1.0000)
 [1 0]   0               0.0 (0.0007)
